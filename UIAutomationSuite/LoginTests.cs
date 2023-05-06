@@ -12,6 +12,12 @@ public class LoginTests
     {
         IWebDriver driver = new ChromeDriver();
         using var app = new App(driver);
-        app.GetPage<LoginPage>().GoTo();
+        var isUserLoggedIn = app.GetPage<LoginPage>().GoTo()
+            .EnterUsername("standard_user")
+            .EnterPassword("secret_sauce")
+            .ClickOnLoginButton()
+            .IsUserLoggedIn();
+        Assert.True(isUserLoggedIn,"User should be logged in successfully");
+        
     }
 }

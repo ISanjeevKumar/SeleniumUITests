@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAutomationSuite", "UIAuto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageObjects", "PageObjects\PageObjects.csproj", "{3A3AAC5E-2728-4AC4-80F4-076CE083F19E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumHelper", "SeleniumHelper\SeleniumHelper.csproj", "{AC8BF969-DFE5-422D-8365-CD0D82CC57CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3A3AAC5E-2728-4AC4-80F4-076CE083F19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A3AAC5E-2728-4AC4-80F4-076CE083F19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A3AAC5E-2728-4AC4-80F4-076CE083F19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC8BF969-DFE5-422D-8365-CD0D82CC57CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8BF969-DFE5-422D-8365-CD0D82CC57CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8BF969-DFE5-422D-8365-CD0D82CC57CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8BF969-DFE5-422D-8365-CD0D82CC57CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

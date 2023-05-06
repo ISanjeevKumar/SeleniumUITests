@@ -7,11 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Selenium.WebDriver" Version="4.9.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\SeleniumHelper\SeleniumHelper.csproj" />
+      <Reference Include="WebDriver">
+        <HintPath>..\..\..\..\.nuget\packages\selenium.webdriver\4.9.0\lib\net6.0\WebDriver.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

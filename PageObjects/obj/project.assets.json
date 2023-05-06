@@ -29,6 +29,16 @@
         "build": {
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
+      },
+      "SeleniumHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SeleniumHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SeleniumHelper.dll": {}
+        }
       }
     }
   },
@@ -84,11 +94,17 @@
         "selenium.webdriver.4.9.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
+    },
+    "SeleniumHelper/1.0.0": {
+      "type": "project",
+      "path": "../SeleniumHelper/SeleniumHelper.csproj",
+      "msbuildProject": "../SeleniumHelper/SeleniumHelper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Selenium.WebDriver >= 4.9.0"
+      "Selenium.WebDriver >= 4.9.0",
+      "SeleniumHelper >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -115,7 +131,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/sanjeev.kumar1/Documents/github-projects/SeleniumUITests/SeleniumHelper/SeleniumHelper.csproj": {
+              "projectPath": "/Users/sanjeev.kumar1/Documents/github-projects/SeleniumUITests/SeleniumHelper/SeleniumHelper.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

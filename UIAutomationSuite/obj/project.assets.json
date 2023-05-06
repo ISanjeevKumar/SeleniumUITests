@@ -1726,13 +1726,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Selenium.WebDriver": "4.9.0"
+          "Selenium.WebDriver": "4.9.0",
+          "SeleniumHelper": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PageObjects.dll": {}
         },
         "runtime": {
           "bin/placeholder/PageObjects.dll": {}
+        }
+      },
+      "SeleniumHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SeleniumHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SeleniumHelper.dll": {}
         }
       }
     }
@@ -5857,6 +5868,11 @@
       "type": "project",
       "path": "../PageObjects/PageObjects.csproj",
       "msbuildProject": "../PageObjects/PageObjects.csproj"
+    },
+    "SeleniumHelper/1.0.0": {
+      "type": "project",
+      "path": "../SeleniumHelper/SeleniumHelper.csproj",
+      "msbuildProject": "../SeleniumHelper/SeleniumHelper.csproj"
     }
   },
   "projectFileDependencyGroups": {
