@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using SeleniumHelper;
 
 namespace PageObjects;
 
@@ -6,9 +7,9 @@ public class App : IDisposable
 {
     private IWebDriver  Driver {  get; }
 
-    public App(IWebDriver driver)
+    public App()
     {
-        Driver = driver;
+        Driver = DriverFactory.CreateDriver();
     }
     
     public T GetPage<T>() where T : IPage

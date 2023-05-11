@@ -71,7 +71,15 @@ public class LoginPage : BasePage , IPage
 
     public bool IsUserLoggedIn()
     {
-        return Driver.Url.Contains("inventory.html");
+        try
+        {
+            Driver.WaitForUrl("inventory.html");
+            return true;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        } 
     }
     
 }

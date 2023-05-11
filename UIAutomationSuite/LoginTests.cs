@@ -1,5 +1,3 @@
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using PageObjects;
 
 namespace UIAutomationSuite;
@@ -10,8 +8,7 @@ public class LoginTests
     [Fact]
     public void ShouldBeAbleToLogin()
     {
-        IWebDriver driver = new ChromeDriver();
-        using var app = new App(driver);
+        using var app = new App();
         var isUserLoggedIn = app.GetPage<LoginPage>().GoTo()
             .EnterUsername("standard_user")
             .EnterPassword("secret_sauce")
